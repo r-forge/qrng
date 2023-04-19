@@ -5,7 +5,7 @@ Title: (Randomized) Quasi-Random Number Generators
 Description: Functionality for generating (randomized) quasi-random numbers in
   high dimensions.
 Authors@R: c(person(given = "Marius", family = "Hofert", role = c("aut", "cre"),
-                    email = "marius.hofert@uwaterloo.ca"),
+                    email = "mhofert@hku.hk"),
              person(given = "Christiane", family = "Lemieux", role = "aut",
                     email = "clemieux@uwaterloo.ca"))
 Author: Marius Hofert [aut, cre], Christiane Lemieux [aut]
