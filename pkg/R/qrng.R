@@ -94,6 +94,8 @@ sobol <- function(n, d = 1, randomize = c("none", "digital.shift", "Owen",
                }
                ## As they write on ?generate_sobol_set, this function is based on
                ## DOI 10.1137/070709359 (by Joe, Kuo; better 2d projections than in randtoolbox)
+               if(d > 21201)
+                   stop("Direction numbers not implemented in such large dimensions.")
                res <- spacefillr::generate_sobol_owen_set(n + skip, dim = d, seed = seed)
                if(d == 1) res[(1+skip):(n+skip)] else res[(1+skip):(n+skip),]
            },
